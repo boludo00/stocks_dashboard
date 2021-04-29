@@ -1,3 +1,4 @@
 finnhubkey.txt
 *.ipynb*
 .vscode
+venv

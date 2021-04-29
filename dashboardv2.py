@@ -383,7 +383,7 @@ grid = [
 ]
 
 app.layout = html.Div(grid)
-
+server = app.server # for deployment
 
 @app.callback(
     [
