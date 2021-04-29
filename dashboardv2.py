@@ -10,10 +10,10 @@ import yfinance as yf
 import datetime as dt
 import random
 
-# with open("finnhubkey.txt") as f:
-#     api_key = f.read()
+with open("finnhubkey.txt") as f:
+    api_key = f.read()
 
-finnhub_client = finnhub.Client(api_key="c0cbs3748v6u6kubnlsg")
+finnhub_client = finnhub.Client(api_key=api_key)
 
 DEFAULT_PLOT_LAYOUT = dict(
     hovermode="x unified",
