@@ -1,5 +1,7 @@
 # Stocks Dashboard
 
+Try out this interactive dashboard [here!](https://plotly-stocks-dashboard.herokuapp.com/)
+
 ## Dependencies
 
 `pip install -r requirements.txt`
