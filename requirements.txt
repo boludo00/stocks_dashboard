@@ -4,3 +4,4 @@ pandas
 plotly
 finnhub-python
 yfinance
+gunicorn
