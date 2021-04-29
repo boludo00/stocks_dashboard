@@ -9,7 +9,6 @@ import finnhub
 import yfinance as yf
 import datetime as dt
 import random
-import plotly.express as px
 
 with open("finnhubkey.txt") as f:
     api_key = f.read()
@@ -453,7 +452,6 @@ def graph_input(period, checked, symbol):
         ticks = ticker.history(period=period).reset_index()
     ticks = ticks[["Date"] + checked]
     ticks.Date = ticks.Date.astype(str)
-    # px.scatter(ticks, x="Date", y=check, custom_data=["Date"],)
     fig = go.Figure()
     for check in checked:
         fig.add_trace(
